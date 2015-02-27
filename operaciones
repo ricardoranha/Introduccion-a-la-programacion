@@ -1,0 +1,21 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+int main()
+{ float A,B,C,D,E,F;
+	cout<<"INGRESE A Y B";
+	cin>>A;
+	cin>>B;
+	C=A+B;
+	D=A-B;
+	E=A*B;
+	F=A/B;
+	cout<<"La suma es:",C;
+	cout<<"La resta es:",D;
+	cout<<"La multiplicacion es:",E;
+	cout<<"la division es:",F;
+	getch();
+	return 0;
+}
