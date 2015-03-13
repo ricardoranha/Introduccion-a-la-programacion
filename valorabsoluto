@@ -1,0 +1,19 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+int main() 
+{
+	int a;
+	cout << "Porfavor asigne un numero para A:" << endl;
+	cin >> a;
+	if (a<0) 
+		a = (-1*a);
+		cout << "El valor absoluto es:" << endl;
+		cout << a << endl;
+	
+	getch();
+	return 0;
+}
