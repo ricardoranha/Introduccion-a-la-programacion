@@ -1,0 +1,22 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+void main()
+{float numero,mayor,n,i;
+	cout<<"por favor introduzca la cantidad de n numeros: ";
+	cin>>n;
+	mayor=-99999;
+	for(i=0;i<n;i++)
+	{	cout<<"introduzca un numero: ";
+		cin>>numero;
+	if(mayor<numero)
+		{
+			mayor=numero;
+		}
+	}
+	cout<<"mayor: "<<mayor;
+	getch ();
+}
