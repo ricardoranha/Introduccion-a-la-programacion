@@ -1,0 +1,38 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+void main()
+{int p,s,n,m,e,r,a=1,c=2;
+	cout<<"\n\n\t\t\tPROGRAMA DE MCD DE 2 NUMEROS"<<endl;	
+	cout<<"\n\npor favor introduzca dos numeros: ";
+	cin>>p;
+	cin>>s;
+		if(p<s)
+		{
+		 n=p;
+		 m=s;
+		}
+		else
+		{
+		 n=s;
+		 m=p;
+		}
+	do{
+		if(n%c==0 && m%c==0)
+		{
+		 a=a*c;
+		 n=n/c;
+		 m=m/c;
+		}
+		else
+		{
+		 c++;
+		}
+	  }
+	while(c<=n);
+	cout<<"el MCD de dos numeros es: "<<a;
+	getch();
+}
