@@ -1,0 +1,30 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "math.h"
+
+using namespace std;
+
+void main()
+{float r,s,i,d;
+ int n;
+ cout<<"Porfavor ingrese un numero, para la conversion"<<endl;
+ cin>>n;
+ do
+	{
+	 cout<<"Porfavor ingrese la base del numero 1<r<10"<<endl;
+	 cin>>r;
+    }
+ while((0>=r)||(r>=10));
+ s=0;
+ i=0;
+ while(n>0)
+	  {
+	   d=n%10;
+	   n=n/10;
+	   s= s + (d*pow(r,i));
+	   i=i++;
+	  }
+ cout<<"La conversion es: "<<s;
+ getch();
+}
