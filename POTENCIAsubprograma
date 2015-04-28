@@ -1,0 +1,23 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+float potencia(float base, int exponente);
+void main()
+{int e;
+ float pot, b; 
+	cout<<"Ingrese la base: ";cin>>b;
+	cout<<"Ingrese el esponente: ";cin>>e;
+	pot=potencia(b,e);
+	cout<<"la potencia del numero es:"<<pot;
+ getch();
+}
+float potencia(float base, int exponente)
+{int i;
+ float a=1;
+ for(i=1;i<=exponente;i++)
+	 a=a*base;
+ return a;
+}
