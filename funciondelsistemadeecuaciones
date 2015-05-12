@@ -1,0 +1,24 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "math.h"
+
+using namespace std;
+
+void ecuacion(float a,float b,float c,float d,float e,float f,float &x,float &y);
+void main()
+{float a,b,c,d,e,f,m,n,ecu;
+ cout<<"Por favor ingrese a,b,c,d,e,f respectivamente: "<<endl;
+ cin>>a>>b>>c>>d>>e>>f;
+ ecuacion(a,b,c,d,e,f,m,n);
+ cout<<"resultado x="<<m;
+ cout<<"resultado y="<<n;
+ getch();
+}
+
+void ecuacion(float a,float b,float c,float d,float e,float f,float &x,float &y)
+{
+	y=(a*f-c*d)/(b*d-a*e);
+
+	x=(-c-b*y)/a;
+}
