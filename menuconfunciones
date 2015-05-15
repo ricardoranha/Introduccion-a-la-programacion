@@ -1,0 +1,100 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "math.h"
+#include "stdlib.h"
+
+using namespace std;
+
+void cuadratica();
+float determinante (float a, float b, float c);
+void reales (float a, float b, float d, float &x1, float &x2);
+void imaginarias (float a, float b,float d,float &x1, float &x2);
+float unica (float a, float b);
+void sistema ();
+void ecuacion(float a, float b, float c, float d, float e, float f, float &x, float &y);
+void main()
+{int opcion;
+	  do{
+			cout<<"\n____menu____"<<endl;
+			cout<<"1) Ecuacion cuadratica: "<<endl;
+			cout<<"2) Sistema de ecuaciones: "<<endl;
+			cout<<"0) SALIR";
+			cin>>opcion;
+			switch(opcion)
+			{	case 1: cuadratica();
+				break;
+				case 2: sistema();
+				break;
+				case 0: cout<<"salir";
+				break;
+				default: cout<<"Opcion invalida";
+			}
+			system("cls");
+	    }while (opcion!=0);
+getch();
+}
+
+void cuadratica()
+{float a,b,c,d,x,z1,z2;
+ cout<<"ingrese a,b y c RESPECTIVAMENTE: ";
+ cin>>a,b,c;
+ d=determinante(a,b,c);
+	if(d>0)
+    {	reales(a,b,d,z1,z2);
+		cout<<"solucion 1: "<<z1;
+		cout<<"solucion 2: "<<z2;
+	}
+	else
+	{ if (d==0)
+		{	unica(a,b);
+			cout<<"solucion unica: "<<x;
+		}
+	  else
+	  { imaginarias (a,b,c,z1,z2);
+		cout<<"solucion imaginaria "<<z1<<"+"<<z2<<"i";
+		cout<<"solucion imaginaria "<<z1<<"-"<<z2<<"i";
+	  }
+	}
+	getch();
+}
+
+float determinante (float a, float b, float c)
+{float auxiliar;
+	auxiliar=pow(b,2)-4*(a)*(b);
+ return auxiliar;
+}
+
+void reales (float a, float b,float d,float &x1,float &x2)
+{
+	x1=(-b+sqrt(d))/(2*a);
+	x2=(-b-sqrt(d))/(2*a);
+}
+
+void imaginarias (float a, float b, float d,float &x1,float &x2)
+{
+	x1=-b/(2*a);
+	x2=sqrt(-d)/(2*a); 
+}
+
+float unica (float a, float b)
+{float x;
+	x=-b/(2*a);
+ return x;
+}
+
+void sistema()
+{float a,b,c,d,e,f,m,n;
+	cout<<"ingrese a,b,c,d,e,f RESPECTIVAMENTE: "<<endl;
+	cin>>a>>b>>c>>d>>e>>f;
+	ecuacion(a,b,c,d,e,f,m,n);
+	cout<<"el resultado de x: "<<m;
+	cout<<"el resultado de y: "<<n;
+getch ();
+}
+
+void ecuacion(float a, float b, float c, float d, float e, float f, float &x, float &y)
+{
+	y=(a*f-c*d)/(b*d-a*e);
+	x=(-c-b*y)/a;
+}
