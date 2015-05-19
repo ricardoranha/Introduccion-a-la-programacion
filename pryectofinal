@@ -27,7 +27,7 @@ case 2: infobasu ();
 break;
 case 3: inforeci ();
 break;
-case 4:
+case 4:ubitrash ();
 break;
 case 0: ;break;
 default: cout<<"Opcion invalida\n";
