@@ -1,0 +1,50 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#define max 100
+
+using namespace std;
+void cargarvector(int vector[], int tamaño);
+void mostrar(int vector[], int tamaño);
+float promedio(int vec[],int tamaño);
+	
+void main()
+{int n,vector[100];
+ float pro;
+	  do{
+		 cout<<"Introduzca el numero de elementos: ";
+		 cin>>n;
+		}
+	  while((n<=0)&&(n>100));
+	cargarvector(vector,n);
+	mostrar(vector,n);
+	pro=promedio(vector,n);
+	cout<<"El promedio es: "<<pro;
+ getch();
+}
+
+void cargarvector(int vector[], int tamaño)
+{int i;
+	for(i=0;i<tamaño;i++)
+	{
+		cout<<"Ingrese el valor del vector["<<i<<"]= ";
+		cin>>vector[i];
+	}
+}
+
+void mostrar(int vector[], int tamaño)
+{int i;
+	for(i=0;i<tamaño;i++)
+	{
+	 cout<<"vector["<<i<<"]= ";
+	 cout<<vector[i]<<endl;
+	}
+}
+
+float promedio(int vec[],int tamaño)
+{float suma=0;
+ int i;
+	for(i=0;i<tamaño;i++)
+		suma=suma+vec[i];
+ return suma/tamaño;
+}
