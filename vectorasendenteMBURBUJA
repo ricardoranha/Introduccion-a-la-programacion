@@ -36,7 +36,7 @@ void ordenar(int vec[],int tam)
 	{
 		for(int j=i+1;j<tam;j++)
 		{
-			if(vec[i]>vec[j])
+			if(vec[i]>vec[j])    // CAMBIANDO EL SIGNO CAMBIA A DESENDENTE
 			{
 			 aux=vec[j];
 			 vec[j]=vec[i];
