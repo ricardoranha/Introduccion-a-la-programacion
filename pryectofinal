@@ -1,4 +1,3 @@
-
 #include "stdafx.h"
 #include <iostream>
 #include "conio.h"
@@ -6,20 +5,24 @@
 using namespace std;
 void infoapp ();
 void infobasu ();
+void separarbasura();
 void inforeci ();
 void ubitrash ();
 void main()
-{float ; int opcion;
+
+{int opcion;
 do{
-cout<<"MENU - Bienvenido a Mundo Verde \t\n";
-cout<<"================================ \t\n";
-cout<<"1.- Informacion sobre mundo verde \n";
-cout<<"2.- Tipos de basura \n";
-cout<<"3.- ¿Como reciclar? \n";
-cout<<"4.- Ubicacion del camion de basura \n";
-cout<<"0.- Salir\n";
-cout<<"Elige una opcion\n";
+cout<<"\n\t\t                                    \t\n";
+cout<<"\n\t\t     Bienvenido a Mundo Verde \t\n";
+cout<<"\n\t\t ================================== \t\n";
+cout<<"\n\t\t 1.- Informacion sobre mundo verde \n";
+cout<<"\n\t\t 2.- Tipos de basura \n";
+cout<<"\n\t\t 3.- Como reciclar? \n";
+cout<<"\n\t\t 4.- Ubicacion del camion de basura \n";
+cout<<"\n\t\t 0.- Salir\n";
+cout<<"\n\t\t Elige una opcion: \n";
 cin>>opcion;
+system ("cls");
 switch(opcion){
 case 1: infoapp ();
 break;
@@ -38,15 +41,54 @@ system ("cls");
 while (opcion!=0);
 getch ();
 }
+
 void infoapp ()
-{ cout<<"INFORMACION SOBRE LA APP"<<endl;
+{ cout<<"\n\tINFORMACION SOBRE LA APP"<<endl;
+cout<<"\n Mundo verde es una aplicacion que te enseñara a resolver el problema ";
+cout<<"\n de la basura en tu ciudad, o donde te encontres. Fue diseñada ";
+cout<<"\n principalmente para apoyarte como ciudadano a poder saber cuando y ";
+cout<<"\n donde pasa el camion de basura y donde esta el repositorio mas cernano.";
 }
-void infobasu ()
-{ cout<<"INFORMACION SOBRE LA BASURA"<<endl;
-}
+
 void inforeci ()
-{ cout<<"INFORMACION SOBRE EL RECICLAJE"<<endl;
+{ cout<<"\n\tINFORMACION SOBRE EL RECICLAJE"<<endl;
 }
+
 void ubitrash ()
-{ cout<<"UBICACION GPS"<<endl;
+{ cout<<"\n\tUBICACION GPS"<<endl;
+}
+
+
+void infobasu ()
+{ int opcion;
+
+cout<<"\n\tINFORMACION SOBRE LA BASURA"<<endl;
+do{
+cout<<"\n\t 1.- Como separar la basura? \n";
+cout<<"\n\t 2.- Que significan los colores para separar basura? \n";
+cout<<"\n\t 0.- Volver \n";
+cout<<"\n\t Elige una opcion: \n";
+cin>>opcion;
+system ("cls");
+switch(opcion){
+case 1: separarbasura();
+break;
+case 2: cout<<"hola";
+break;
+case 0: cout<<"hola";
+break;
+default: cout<<"Opcion invalida\n";
+}
+system ("cls");
+}
+while (opcion!=0);
+getch ();
+}
+
+void separarbasura()
+{ cout<<"\n\t Basura organica"<<endl;
+  
+  cout<<"\n\t residuos "<<endl;
+  cout<<"\n\t Basura inganica"<<endl;
+  getch();
 }
