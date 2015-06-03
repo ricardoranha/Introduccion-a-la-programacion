@@ -9,6 +9,14 @@ void separarbasura();
 void basuraorganica();
 void basurainorganica();
 void residuos();
+void coloresdebasura();
+void blanco();
+void azul();
+void plomo();
+void cafe();
+void crema();
+void verde();
+void rojo();
 void inforeci ();
 void ubitrash ();
 void main()
@@ -77,7 +85,7 @@ system ("cls");
 switch(opcion){
 case 1: separarbasura();
 break;
-case 2: cout<<"hola";
+case 2: coloresdebasura();
 break;
 case 0: cout<<"hola";
 break;
@@ -88,7 +96,7 @@ system ("cls");
 while (opcion!=0);
 getch ();
 }
- 
+ --------------------------------------------------------------------------------------------------------
 void separarbasura()
 {int opcion;
 
@@ -96,7 +104,7 @@ cout<<"\n\tINFORMACION SOBRE LA BASURA"<<endl;
 do{
 cout<<"\n\t 1.- Basura organica\n";
 cout<<"\n\t 2.- Basura inganica\n";
-cout<<"\n\t 2.- Residuos\n";
+cout<<"\n\t 3.- Residuos\n";
 cout<<"\n\t 0.- Volver \n";
 cout<<"\n\t Elige una opcion: \n";
 cin>>opcion;
@@ -108,7 +116,7 @@ case 2: basurainorganica();
 break;
 case 3: residuos();
 break;
-case 0: separarbasura();
+case 0: cout<<"volver";
 break;
 default: cout<<"Opcion invalida\n";
 }
@@ -141,11 +149,122 @@ getch ();
 }
 
 void basurainorganica()
-{cout<<"La basura inorganica es.....";
+{cout<<"\n\tINBASURA ORGANICA"<<endl;
+cout<<"\n La basura inorganica, que es la que nos ocupara, sera todo aquel desecho que";
+cout<<"\n no presenta un origen biologico, es decir, no proviene de un organismo vivo";
+cout<<"\n directamente sino que proviene del medio industrial o es el resultado de algun";
+cout<<"\n proceso no natural. Los productos de tipo industrial como por ejemplo las ";
+cout<<"\n botellas, los plasticos, entre otros, son un ejemplo de este tipo de basura.";
+cout<<"\n ";
+cout<<"\n Asimismo, integra este grupo de desechos aquellos materiales sanitarios de ";
+cout<<"\n descarte. Asi, todos los elementos que se emplean en los hospitales o centros";
+cout<<"\n de atencion medica como ser: algodones, vendas, gasas, agujas, entre los mas";
+cout<<"\n recurrentes, son considerados como basura inorganica.";
+
 getch ();
 }
 
 void residuos()
-{cout<<"Los residuos son.....";
+{cout<<"\n\tRESIDUOS"<<endl;
+cout<<"\n Los residuos son  todos aquellos elementos o componentes que pierden utilidad";
+cout<<"\n y deben ser por tanto descartados. Normalmente, la palabra residuo se utiliza";
+cout<<"\n para hacer referencia a los residuos domesticos, aquellos generados por el";
+cout<<"\n consumo de alimentos y de otros productos. Asi, tambien se puede aplicar";
+cout<<"\n a otro tipo de resiudos mas complejos tales como los que quedan a partir del";
+cout<<"\n uso de determinados químicos o productos en las fabricas. Residuos tambien";
+cout<<"\n pueden ser los restos o elementos descartables de una operacion quimica.";
 getch ();
+}
+
+--------------------------------------------------------------------------------------------
+
+void coloresdebasura()
+{int opcion;
+
+cout<<"\n\tQue significan los colores para separar basura?"<<endl;
+do{
+cout<<"\n\t 1.- Blanco\n";
+cout<<"\n\t 2.- Azul\n";
+cout<<"\n\t 3.- Plomo\n";
+cout<<"\n\t 4.- Cafe\n";
+cout<<"\n\t 5.- Crema\n";
+cout<<"\n\t 6.- Verde\n";
+cout<<"\n\t 7.- Rjo\n";
+cout<<"\n\t 0.- volver\n";
+cout<<"\n\t Elige una opcion: \n";
+cin>>opcion;
+system ("cls");
+switch(opcion){
+case 1: blanco();
+break;
+case 1: azul();
+break;
+case 1: plomo();
+break;
+case 1: cafe();
+break;
+case 1: crema();
+break;
+case 1: verde();
+break;
+case 1: rojo();
+break;
+case 0: cout<<"volver";
+break;
+default: cout<<"Opcion invalida\n";
+}
+system ("cls");
+}
+while (opcion!=0);
+getch();
+}
+void blanco();
+{cout<<"\n En el color Blanco, de debe depositar el VIDRIO, ademas:";
+cout<<"\n "; 
+cout<<"\n SI: Botellas, frascos limpios, sin tapas.";
+cout<<"\n ";
+cout<<"\n NO: cristal de ventanas, lamparas electricas, bombillos, de cocina: vasos";
+cout<<"\n y jarras, para el horno: Pirex, Durax, vidrios ceramicos, espejos, cristales,";
+cout<<"\n lentes, objetos de adorno, ceniceros, farolas de autos. Pues estos perjudican";
+cout<<"\n el proceso de reciclaje, la pureza y color del vidrio reciclado que se generara.";
+getch();
+}
+void azul();
+{cout<<"\n En el color Azul, se deve depositar el Plastico, ademas:";
+cout<<"\n ";
+cout<<"\n SI Botellas de gaseosas y agua mineral limpias, bolsas plasticas Otros plasticos.";
+cout<<"\n NO Envases de productos quimicos como venenos Por 1 TON. de plastico reciclado";
+cout<<"\n se ahorran 7 TON. Petroleo crudo y se contamina 55% menos"; 
+getch();
+}
+void plomo()
+{cout<<"\n En el color Azul, se deve depositar el Papel, ademas:";
+cout<<"\n ";
+cout<<"\n SI Papeles impresos y/o escritos en general: periodicos y revistas, folletos y";
+cout<<"\n catalogos, cuadernos, papeles de oficina, de computadora, fotocopias, sobres y";
+cout<<"\n tarjetas, guías telefonicas, hueveras y rollos de carton, bolsas de papel. Cajas,";
+cout<<"\n cartulinas, cartones.";
+cout<<"\n ";
+cout<<"\n NO: Humedos, sucios, con restos de alimentos, con elementos metalicos, celofan,";
+cout<<"\n envoltorios de golosinas, papas fritas, tetrapack, fotografías, calcomanías.";
+cout<<"\n Papeles metalizados, Papeles plastificados, Papel carbon. Por cada 90k de papel";
+cout<<"\n o carton recogido evitamos la tala de 2 arboles";
+getch();
+}
+void cafe()
+{cout<<"\n En el color Cafe, se deve depositar el Papel, ademas:";
+cout<<"\n ";
+cout<<"\n SI: De aluminio: Latas vacías y aplastadas de bebidas";
+cout<<"\n ";
+cout<<"\n NO: Con líquidos";
+getch();
+}
+void crema()
+{
+}
+void verde()
+{
+}
+void rojo()
+{
 }
