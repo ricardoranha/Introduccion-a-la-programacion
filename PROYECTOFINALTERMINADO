@@ -17,10 +17,17 @@ void cafe();
 void crema();
 void verde();
 void rojo();
-void inforeci ();
+void inforeci();
+void curiosidades();
 void ubitrash ();
-void main()
+void norte();
+void noreste();
+void noroeste();
+void sur();
+void sureste();
+void suroeste();
 
+void main()
 {int opcion;
 system("color 3F");
 do{
@@ -29,8 +36,9 @@ cout<<"\n\t\t     Bienvenido a Mundo Verde \t\n";
 cout<<"\n\t\t ================================== \t\n";
 cout<<"\n\t\t 1.- Informacion sobre mundo verde \n";
 cout<<"\n\t\t 2.- Tipos de basura \n";
-cout<<"\n\t\t 3.- Como reciclar? \n";
-cout<<"\n\t\t 4.- Ubicacion del camion de basura \n";
+cout<<"\n\t\t 3.- Que pasa con lo que reciclo? \n";
+cout<<"\n\t\t 4.- Curiosidades del reciclaje \n";
+cout<<"\n\t\t 5.- Ubicacion del camion de basura \n";
 cout<<"\n\t\t 0.- Salir\n";
 cout<<"\n\t\t Elige una opcion: \n";
 cin>>opcion;
@@ -42,7 +50,9 @@ case 2: infobasu ();
 break;
 case 3: inforeci ();
 break;
-case 4:ubitrash ();
+case 4: curiosidades();
+break;
+case 5:ubitrash ();
 break;
 case 0: ;break;
 default: cout<<"Opcion invalida\n";
@@ -64,20 +74,131 @@ cout<<"\n donde pasa el camion de basura y donde esta el repositorio mas cernano
 
 void inforeci ()
 { cout<<"\n\tINFORMACION SOBRE EL RECICLAJE"<<endl;
+cout<<"\n Alguno de los materiales que podemos conseguir con el reciclaje son:";
+cout<<"\n ";
+cout<<"\n   * Tuberias\n"; 
+cout<<"\n   * Fibras textiles\n";
+cout<<"\n   * Piezas de automovil\n";
+cout<<"\n   * Llantas de bicicleta\n";
+cout<<"\n   * Camisetas\n";
+cout<<"\n   * Sillas\n";
+cout<<"\n   * Cajas de zapatos\n";
+cout<<"\n   * Papel higienico\n";
+cout<<"\n   * Periodicos\n";
+cout<<"\n   * Hueveras\n";
+getch();
+}
+
+void curiosidades()
+{ cout<<"\n\tCURIOSIDADES DEL RECICLAJE	"<<endl;
+cout<<"\n 1. Con la energia ahorrada por el material reciclado durante 2014, en";
+cout<<"\n Espanha se podria mantener una bombilla de 60w encendida durante mas de";
+cout<<"\n 5,7 millones de años.";
+cout<<"\n ";
+cout<<"\n 2. El reciclaje de España durante 2014 permitio ahorrar el equivalente";
+cout<<"\n al consumo anual de agua de 6,84 millones de ciudadanos";
+cout<<"\n ";
+cout<<"\n 3. La fabricación de papel reciclado consume un 62% menos de energia y";
+cout<<"\n un 86% menos de agua que el papel nuevo";
+cout<<"\n ";
+cout<<"\n 4. Fabricar una lata con materiales reciclados ahorra un 95% de energia";
+cout<<"\n frente a crear una nueva lata desde cero.";
+cout<<"\n ";
+cout<<"\n 5. La descomposicion de una lata puede tardar hasta 500 años. Pero el";
+cout<<"\n vidrio mucho mas, hasta 5.000 años. ¡Se ha encontrado vidrio en tumbas";
+cout<<"\n egipcias!";
+cout<<"\n ";
+cout<<"\n 6. Los muebles que te rodean pueden estar hechos de briks reciclados,";
+cout<<"\n permitiendo ahorrar un gran consumo de materias primas y energia.";
+cout<<"\n ";
+cout<<"\n 7. La actividad de Ecoembes ya ha generado en España 42.600 puestos de";
+cout<<"\n trabajo, 9.400 de ellos de manera directa.";
+getch();
 }
 
 void ubitrash ()
-{ cout<<"\n\tUBICACION GPS"<<endl;
+{ cout<<"\n\tUBICACION DE TU CAMION DE BASURA"<<endl;
+int opcion;
+do{
+cout<<"\n\t\t Por favorm, seleciona tu ubicacion:\t\n";
+cout<<"\n\t\t 1.- Zona Norte\t\n";
+cout<<"\n\t\t 2.- Zona Nor este\n";
+cout<<"\n\t\t 3.- Zona Nor oeste \n";
+cout<<"\n\t\t 4.- Zona Sur\n";
+cout<<"\n\t\t 5.- Zona Sur este\n";
+cout<<"\n\t\t 6.- Zona Sur oeste\n";
+cout<<"\n\t\t 0.- Salir\n";
+cout<<"\n\t\t Elige una opcion: \n";
+cin>>opcion;
+system ("cls");
+switch(opcion){
+case 1: norte();
+break;
+case 2: noreste();
+break;
+case 3: noroeste();
+break;
+case 4: sur();
+break;
+case 5: sureste();
+break;
+case 6: suroeste();
+break;
+case 0: ;break;
+default: cout<<"Opcion invalida\n";
+}
+getch ();
+system ("cls");
+}
+while (opcion!=0);
+getch ();
+getch();
 }
 
+void norte()
+{cout<<"\n Tu camion de basura pasa por tu vecindario los dias: \n";
+cout<<"\n* Lunes a las 08:00am\n";
+cout<<"\n* Jueves a las 08:00am";
+getch();
+}
+void noreste()
+{cout<<"\n Tu camion de basura pasa por tu vecindario los dias: \n";
+cout<<"\n* Martes a las 08:00am\n";
+cout<<"\n* viernes a las 08:00am";
+getch();
+}
+void noroeste()
+{cout<<"\n Tu camion de basura pasa por tu vecindario los dias: \n";
+cout<<"\n* Miercoles a las 08:00am\n";
+cout<<"\n* Sabado a las 08:00am";
+getch();
+}
+void sur()
+{cout<<"\n Tu camion de basura pasa por tu vecindario los dias: \n";
+cout<<"\n* Lunes a las 08:00am\n";
+cout<<"\n* Jueves a las 08:00am";
+getch();
+}
+void sureste()
+{cout<<"\n Tu camion de basura pasa por tu vecindario los dias: \n";
+cout<<"\n* Miercoles a las 08:00am\n";
+cout<<"\n* Sabado a las 08:00am";
+getch();
+}
+void suroeste()
+{cout<<"\n Tu camion de basura pasa por tu vecindario los dias: \n";
+cout<<"\n* Martes a las 08:00am\n";
+cout<<"\n* viernes a las 08:00am";
+getch();
+}
 
 void infobasu ()
 { int opcion;
 
 cout<<"\n\tINFORMACION SOBRE LA BASURA"<<endl;
 do{
-cout<<"\n\t 1.- Como separar la basura? \n";
-cout<<"\n\t 2.- Que significan los colores para separar basura? \n";
+cout<<"\n\t 1.- Separemos la basura \n";
+cout<<"\n\t 2.- Conozcamos los colores para separar basura? \n";
 cout<<"\n\t 0.- Volver \n";
 cout<<"\n\t Elige una opcion: \n";
 cin>>opcion;
@@ -96,15 +217,15 @@ system ("cls");
 while (opcion!=0);
 getch ();
 }
- --------------------------------------------------------------------------------------------------------
+
 void separarbasura()
 {int opcion;
 
 cout<<"\n\tINFORMACION SOBRE LA BASURA"<<endl;
 do{
-cout<<"\n\t 1.- Basura organica\n";
-cout<<"\n\t 2.- Basura inganica\n";
-cout<<"\n\t 3.- Residuos\n";
+cout<<"\n\t 1.- Conociendo la basura organica\n";
+cout<<"\n\t 2.- Conociendo la basura inganica\n";
+cout<<"\n\t 3.- Conociendo los residuos\n";
 cout<<"\n\t 0.- Volver \n";
 cout<<"\n\t Elige una opcion: \n";
 cin>>opcion;
@@ -176,8 +297,6 @@ cout<<"\n pueden ser los restos o elementos descartables de una operacion quimic
 getch ();
 }
 
---------------------------------------------------------------------------------------------
-
 void coloresdebasura()
 {int opcion;
 
@@ -189,7 +308,7 @@ cout<<"\n\t 3.- Plomo\n";
 cout<<"\n\t 4.- Cafe\n";
 cout<<"\n\t 5.- Crema\n";
 cout<<"\n\t 6.- Verde\n";
-cout<<"\n\t 7.- Rjo\n";
+cout<<"\n\t 7.- Rojo\n";
 cout<<"\n\t 0.- volver\n";
 cout<<"\n\t Elige una opcion: \n";
 cin>>opcion;
@@ -197,17 +316,17 @@ system ("cls");
 switch(opcion){
 case 1: blanco();
 break;
-case 1: azul();
+case 2: azul();
 break;
-case 1: plomo();
+case 3: plomo();
 break;
-case 1: cafe();
+case 4: cafe();
 break;
-case 1: crema();
+case 5: verde();
 break;
-case 1: verde();
+case 6: crema();
 break;
-case 1: rojo();
+case 7: rojo();
 break;
 case 0: cout<<"volver";
 break;
@@ -218,31 +337,37 @@ system ("cls");
 while (opcion!=0);
 getch();
 }
-void blanco();
-{cout<<"\n En el color Blanco, de debe depositar el VIDRIO, ademas:";
+
+void blanco()
+{system("color 0A");
+	cout<<"\n En el color Blanco, de debe depositar el:  EL VIDRIO";
 cout<<"\n "; 
 cout<<"\n SI: Botellas, frascos limpios, sin tapas.";
 cout<<"\n ";
 cout<<"\n NO: cristal de ventanas, lamparas electricas, bombillos, de cocina: vasos";
 cout<<"\n y jarras, para el horno: Pirex, Durax, vidrios ceramicos, espejos, cristales,";
 cout<<"\n lentes, objetos de adorno, ceniceros, farolas de autos. Pues estos perjudican";
-cout<<"\n el proceso de reciclaje, la pureza y color del vidrio reciclado que se generara.";
+cout<<"\n el proceso de reciclaje, la pureza y color del vidrio reciclado que se generara";
 getch();
+system("color 3F");
 }
-void azul();
-{cout<<"\n En el color Azul, se deve depositar el Plastico, ademas:";
+void azul()
+{system("color 0F");
+	cout<<"\n En el color Azul, se deve depositar el: EL PLASTICO";
 cout<<"\n ";
-cout<<"\n SI Botellas de gaseosas y agua mineral limpias, bolsas plasticas Otros plasticos.";
+cout<<"\n SI Botellas de gaseosas y agua mineral limpias, bolsas plasticas Otro plasticos";
 cout<<"\n NO Envases de productos quimicos como venenos Por 1 TON. de plastico reciclado";
 cout<<"\n se ahorran 7 TON. Petroleo crudo y se contamina 55% menos"; 
 getch();
+system("color 3F");
 }
 void plomo()
-{cout<<"\n En el color Azul, se deve depositar el Papel, ademas:";
+{system("color 0E");
+	cout<<"\n En el color Plomo, se deve depositar: EL PAPEL";
 cout<<"\n ";
 cout<<"\n SI Papeles impresos y/o escritos en general: periodicos y revistas, folletos y";
 cout<<"\n catalogos, cuadernos, papeles de oficina, de computadora, fotocopias, sobres y";
-cout<<"\n tarjetas, guías telefonicas, hueveras y rollos de carton, bolsas de papel. Cajas,";
+cout<<"\n tarjetas, guías telefonicas, hueveras y rollos de carton, bolsas de papel.Cajas";
 cout<<"\n cartulinas, cartones.";
 cout<<"\n ";
 cout<<"\n NO: Humedos, sucios, con restos de alimentos, con elementos metalicos, celofan,";
@@ -250,21 +375,44 @@ cout<<"\n envoltorios de golosinas, papas fritas, tetrapack, fotografías, calco
 cout<<"\n Papeles metalizados, Papeles plastificados, Papel carbon. Por cada 90k de papel";
 cout<<"\n o carton recogido evitamos la tala de 2 arboles";
 getch();
+system("color 3F");
 }
 void cafe()
-{cout<<"\n En el color Cafe, se deve depositar el Papel, ademas:";
+{system("color 0D");
+	cout<<"\n En el color Cafe, se deve depositar: EL METAL";
 cout<<"\n ";
-cout<<"\n SI: De aluminio: Latas vacías y aplastadas de bebidas";
+cout<<"\n SI: De aluminio: Latas vacias y aplastadas de bebidas";
 cout<<"\n ";
-cout<<"\n NO: Con líquidos";
+cout<<"\n NO: Con liquidos";
 getch();
-}
-void crema()
-{
+system("color 3F");
 }
 void verde()
-{
+{system("color 0A");
+	cout<<"\n En el color Verde, se deve depositar: LOS ORDINARIOS E INERTES";
+cout<<"\n ";
+cout<<"\n Bolsas de mecato metalizadas Icopor Tetrapack Papel carbon Barrido Colillas ";
+cout<<"\n Servilletas Papel encerado, plastificado.";
+getch();
+system("color 3F");
 }
+void crema()
+{system("color 0B");
+	cout<<"\n En el color Crema, se deve depositar: LOS BIODEGRADABLES";
+cout<<"\n ";
+cout<<"\n Cascaras de frutas y verduras. Restos de comidas. Alimentos descompuestos";
+getch();
+system("color 3F");
+}
+
 void rojo()
-{
+{system("color 0C");
+	cout<<"\n En el color Rojo, se deve depositar: LOS PELIGROSOS";
+cout<<"\n ";
+cout<<"\n De Riesgo Biologico, Medicinas, drogas, limpiadores, removedores, aerosoles,";
+cout<<"\n desinfectantes, Pesticidas, Fertilizantes, insecticidas, Pinturas, Gasolina,";
+cout<<"\n Aceite, solventes, baterias, estopas contaminadas, grasa, filtros de aceite";
+cout<<"\n y combustible.";
+getch();
+system("color 3F");
 }
