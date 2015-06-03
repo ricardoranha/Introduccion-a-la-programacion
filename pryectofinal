@@ -6,11 +6,15 @@ using namespace std;
 void infoapp ();
 void infobasu ();
 void separarbasura();
+void basuraorganica();
+void basurainorganica();
+void residuos();
 void inforeci ();
 void ubitrash ();
 void main()
 
 {int opcion;
+system("color 3F");
 do{
 cout<<"\n\t\t                                    \t\n";
 cout<<"\n\t\t     Bienvenido a Mundo Verde \t\n";
@@ -84,11 +88,64 @@ system ("cls");
 while (opcion!=0);
 getch ();
 }
-
+ 
 void separarbasura()
-{ cout<<"\n\t Basura organica"<<endl;
-  
-  cout<<"\n\t residuos "<<endl;
-  cout<<"\n\t Basura inganica"<<endl;
-  getch();
+{int opcion;
+
+cout<<"\n\tINFORMACION SOBRE LA BASURA"<<endl;
+do{
+cout<<"\n\t 1.- Basura organica\n";
+cout<<"\n\t 2.- Basura inganica\n";
+cout<<"\n\t 2.- Residuos\n";
+cout<<"\n\t 0.- Volver \n";
+cout<<"\n\t Elige una opcion: \n";
+cin>>opcion;
+system ("cls");
+switch(opcion){
+case 1: basuraorganica();
+break;
+case 2: basurainorganica();
+break;
+case 3: residuos();
+break;
+case 0: separarbasura();
+break;
+default: cout<<"Opcion invalida\n";
+}
+system ("cls");
+}
+while (opcion!=0);
+getch ();
+}
+
+void basuraorganica()
+{cout<<"\n\tBASURA ORGANICA"<<endl;
+cout<<"\n La basura organica es La basura organica esta compuesta por aquellos";
+cout<<"\n desechos que presentan un origen biologico, es decir, ese desecho ha sido";
+cout<<"\n parte de un ser vivo o incluso en algun momento fue un ser que estaba vivo";
+cout<<"\n y tambien por aquellos residuos que resultan de la preparacion de comidas";
+cout<<"\n en el hogar, porque normalmente no empleamos el total de un alimento a la";
+cout<<"\n hora de cocinarlo. Por ejemplo, si preparamos una tarta de manzanas, las";
+cout<<"\n mismas seran desprovistas de su cascara antes de integrarlas a la preparacion";
+cout<<"\n de la tarta, con lo cual, esa cáscara que se extrae ya no nos resultara mas";
+cout<<"\n util y por lo tanto la descartaremos y se convertirá en basura orgánica.";
+cout<<"\n Asimismo, las hojas o las ramas que caen de alguna plantación o arbol, las";
+cout<<"\n verduras, excremento de animales, los huesos, aquellas telas conformadas por";
+cout<<"\n fibras naturales, tal es el caso del lino y hasta el papel, entre otros, son";
+cout<<"\n considerados como basura organica.";
+cout<<"\n ";
+cout<<"\n Cabe destacar que la principal caracteristica que ostenta este tipo de residuo";
+cout<<"\n es que es plausible de descomposiciin con lo cual a partir de ella es posible";
+cout<<"\n generar abono natural para la tierra.";
+getch ();
+}
+
+void basurainorganica()
+{cout<<"La basura inorganica es.....";
+getch ();
+}
+
+void residuos()
+{cout<<"Los residuos son.....";
+getch ();
 }
